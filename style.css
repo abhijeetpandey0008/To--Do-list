@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #234677, #4e0876);
+    padding: 10px;
+
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    margin: 100px  auto  20px;
+    padding: 40px  30px  70px ;
+    border-radius: 20px;
+}
+
+.todo-app h2{
+    color: aquamarine;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.todo-app h2 img{
+
+    width: 40px;
+    margin-left: 10px;
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(180, 179, 191);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+}
+input{
+    flex: 1;
+    border: none;
+    outline: rgb(224, 178, 85);
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button{
+    border: none;
+    outline: rgb(151, 113, 56);
+
+    padding: 20px  50px;
+    background: rgb(152, 138, 128);
+    color:black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px  8px  12px  50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(https://static.thenounproject.com/png/60248-200.png);
+    background-size: cover;
+    background-position: center;
+    top: 7px;
+    left: 8px;
+}
+ ul li.checked{
+    color: #c93232;
+    text-decoration: line-through;
+
+
+}
+
+ul li.checked::before{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/017/177/933/non_2x/round-check-mark-symbol-with-transparent-background-free-png.png);
+
+}
+
+ul li span{
+
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #c93232;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #275abe;
+}
+
